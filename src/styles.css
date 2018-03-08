@@ -1,0 +1,58 @@
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-color: #333;
+  color: #fff;
+}
+
+my-pomodoro {
+  display: flex;
+  height: 100vh;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+pomodoro-time {
+  width: 100vw;
+  text-align: center;
+  font-size: 30px;
+}
+
+pomodoro-set-time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+}
+
+pomodoro-set-time > pomodoro-add {
+  margin: 0 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+pomodoro-set-time > pomodoro-time {
+  width: auto;
+  font-size: 24px;
+  cursor: default;
+}
+
+pomodoro-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  max-width: 90vw;
+  width: 50vh;
+}
+
+svg > path {
+  transition: stroke-dashoffset 0.5s steps(15);
+}
+
+pomodoro-circle > pomodoro-time {
+  position: absolute;
+  top: 50%;
+}

@@ -1,0 +1,33 @@
+{
+  "name": "various",
+  "version": "1.0.0",
+  "description": "Various small projects",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=development rollup -c",
+    "build": "rollup -c",
+    "lint": "eslint --fix src/"
+  },
+  "author": "Michał Grabowski",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-custom-element-classes": "^0.1.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^4.18.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "rollup": "^0.56.3",
+    "rollup-multiple": "^0.41.6",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-copy": "^0.2.3",
+    "rollup-plugin-livereload": "^0.6.0",
+    "rollup-plugin-serve": "^0.4.2"
+  }
+}
